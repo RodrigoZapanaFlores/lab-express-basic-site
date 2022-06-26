@@ -4,7 +4,7 @@ const app = express();
 
 
 
-app.get('/home', (req, res, next) => {
+app.get('/', (req, res, next) => {
     res.sendFile(`${__dirname}/views/home.html`)
 })
 
